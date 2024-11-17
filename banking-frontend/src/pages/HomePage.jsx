@@ -4,8 +4,8 @@ import { Card } from '../components/common/Card';
 
 const HomePage = () =>
 {
-  const [accountBalance, setAccountBalance] = useState(0);
-  const [userName, setUserName] = useState('');
+  // const [accountBalance, setAccountBalance] = useState(0);
+  // const [userName, setUserName] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() =>
@@ -15,8 +15,8 @@ const HomePage = () =>
       .then(response => response.json())
       .then(data =>
       {
-        setAccountBalance(data.balance);
-        setUserName(data.userName);
+        // setAccountBalance(data.balance);
+        // setUserName(data.userName);
         setLoading(false);
       })
       .catch(error =>
