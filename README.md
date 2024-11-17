@@ -1,23 +1,49 @@
-# Java-Banking-Application
+# Java Banking Application
 
-start mysql
+This guide provides instructions to set up and run the Java Banking Application, including both the backend and frontend components.
 
-brew services start mysql
+## Database Setup (MySQL)
 
-check if it is running
+To start MySQL, use the following command:  
+`brew services start mysql`
 
-brew services list
+To check if MySQL is running:  
+`brew services list`
 
-end mysql
+To stop MySQL:  
+`brew services stop mysql`
 
-brew services stop mysql
+## Backend Setup
 
+### Prerequisites
+Ensure you have Maven and Java installed on your system.
 
-backend
-mvn clean install -DskipTests 
-mvn spring-boot:run 
+### Build and Run the Backend
+1. Clean and build the project, skipping tests:  
+   `mvn clean install -DskipTests`
+   
+2. Start the Spring Boot backend:  
+   `mvn spring-boot:run`
 
-frontend
-npx create-react-app banking-frontend  
-npm install react-router-dom tailwindcss @headlessui/react axios @mui/material @emotion/react @emotion/styled  
-npm start
+## Frontend Setup
+
+### Prerequisites
+Ensure you have Node.js and npm installed on your system.
+
+### Create and Configure the Frontend
+1. Create a new React application:  
+   `npx create-react-app banking-frontend`
+   
+2. Install required dependencies:  
+   `npm install react-router-dom tailwindcss @headlessui/react axios @mui/material @emotion/react @emotion/styled`
+   
+3. Start the React application:  
+   `npm start`
+
+## Summary
+
+1. Start MySQL using the provided commands.  
+2. Build and run the backend using Maven.  
+3. Set up and run the frontend using React.
+
+With this guide, you'll have a fully functional banking application, powered by a Spring Boot backend and a React frontend.
