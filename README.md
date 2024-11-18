@@ -1,5 +1,7 @@
 # Java Banking Application
 
+Spring Web - Spring Data JPA - MySQL Driver - Spring Security - Lombok - Spring Boot Devtools
+
 This guide provides instructions to set up and run the Java Banking Application, including both the backend and frontend components.
 
 ## Database Setup (MySQL)
