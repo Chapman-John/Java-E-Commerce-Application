@@ -31,8 +31,8 @@ public class HomeController {
 
         HomePageDTO homePageData = HomePageDTO.builder()
                 .featuredProducts(productService.getFeaturedProducts(featuredProductsLimit))
-                // .topCategories(categoryService.getTopCategories(topCategoriesLimit))
-                // .activePromotions(promotionService.getActivePromotions())
+                .topCategories(categoryService.getTopCategories(topCategoriesLimit))
+                .activePromotions(promotionService.getActivePromotions())
                 .build();
 
         return ResponseEntity.ok(homePageData);

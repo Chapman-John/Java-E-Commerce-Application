@@ -2,6 +2,7 @@ package com.chapman.ecommerce_backend.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.chapman.ecommerce_backend.dto.CategoryDTO;
@@ -10,6 +11,7 @@ import com.chapman.ecommerce_backend.respository.CategoryRespository;
 @Service
 public class CategoryService {
 
+    @Autowired
     private final CategoryRespository categoryRepository;
 
     public CategoryService(CategoryRespository categoryRepository) {

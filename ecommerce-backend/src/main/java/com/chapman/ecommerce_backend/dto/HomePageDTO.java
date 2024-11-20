@@ -1,7 +1,6 @@
 package com.chapman.ecommerce_backend.dto;
 
 import lombok.Data;
-import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;

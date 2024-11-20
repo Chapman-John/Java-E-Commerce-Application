@@ -1,12 +1,12 @@
 package com.chapman.ecommerce_backend.respository;
 
-import com.chapman.ecommerce_backend.dto.CategoryDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import com.chapman.ecommerce_backend.entity.Category;
 
 @Repository
-public interface CategoryRespository extends JpaRepository<CategoryDTO, Long> {
+public interface CategoryRespository extends JpaRepository<Category, Long> {
 
-    CategoryDTO findByName(String name);
+    Category findByName(String name);
 
 }

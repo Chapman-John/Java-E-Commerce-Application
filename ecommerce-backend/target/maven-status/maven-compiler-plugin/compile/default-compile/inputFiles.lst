@@ -6,8 +6,12 @@
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/dto/HomePageDTO.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/dto/ProductDTO.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/dto/PromotionDTO.java
+/Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/entity/Category.java
+/Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/entity/Product.java
+/Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/entity/Promotion.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/respository/CategoryRespository.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/respository/ProductRespository.java
+/Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/respository/PromotionRespository.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/service/CategoryService.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/service/ProductService.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/service/PromotionService.java
