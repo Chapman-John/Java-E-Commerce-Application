@@ -8,7 +8,7 @@ const Navbar = () =>
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     <Link to="/" className="font-bold text-xl text-blue-600">
-                        BankApp
+                        Ecommerce
                     </Link>
 
                     <div className="hidden md:flex space-x-4">
