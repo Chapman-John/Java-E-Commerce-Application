@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.chapman.banking-backend' is invalid and this project uses 'com.chapman.banking_backend' instead.
+* The original package name 'com.chapman.ecommerce-backend' is invalid and this project uses 'com.chapman.ecommerce_backend' instead.
 
 # Getting Started
 

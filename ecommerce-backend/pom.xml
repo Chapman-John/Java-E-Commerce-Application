@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.chapman</groupId>
-	<artifactId>banking-backend</artifactId>
+	<artifactId>ecommerce-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>banking-backend</name>
-	<description>Banking-Application project for Spring Boot</description>
+	<name>ecommerce-backend</name>
+	<description>E-commerce project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -54,7 +54,6 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
