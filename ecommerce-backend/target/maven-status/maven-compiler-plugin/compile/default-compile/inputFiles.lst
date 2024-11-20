@@ -1,2 +1,4 @@
+/Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/Config/CorsConfig.java
+/Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/Config/SecurityConfig.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/Controller/HomeController.java
 /Applications/Java-E-Commerce-Application/ecommerce-backend/src/main/java/com/chapman/ecommerce_backend/EcommerceBackendApplication.java
