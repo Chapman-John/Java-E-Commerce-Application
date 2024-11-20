@@ -1,5 +1,4 @@
 com/chapman/ecommerce_backend/Config/SecurityConfig.class
 com/chapman/ecommerce_backend/EcommerceBackendApplication.class
 com/chapman/ecommerce_backend/Config/CorsConfig$1.class
-com/chapman/ecommerce_backend/Controller/HomeController.class
 com/chapman/ecommerce_backend/Config/CorsConfig.class
