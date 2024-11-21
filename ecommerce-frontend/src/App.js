@@ -70,7 +70,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { ModeToggle } from '../src/components/mode-toggle.tsx';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage.tsx';
 
 function App()
 {

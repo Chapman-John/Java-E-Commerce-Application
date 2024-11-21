@@ -3,8 +3,7 @@ import axios from 'axios';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card.tsx';
 import { Badge } from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/badge.tsx';
 import { Button } from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/button.tsx';
-import
-{
+import {
   Carousel,
   CarouselContent,
   CarouselItem,
@@ -12,33 +11,50 @@ import
   CarouselPrevious
 } from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/carousel.tsx';
 
-const HomePage = () =>
-{
-  const [homeData, setHomeData] = useState({
+interface Product {
+  name: string;
+  price: number;
+  imageUrl?: string;
+}
+
+interface Category {
+  name: string;
+}
+
+interface Promotion {
+  name: string;
+  description: string;
+  discountPercentage: number;
+}
+
+interface HomeData {
+  featuredProducts: Product[];
+  topCategories: Category[];
+  activePromotions: Promotion[];
+}
+
+const HomePage: React.FC = () => {
+  const [homeData, setHomeData] = useState<HomeData>({
     featuredProducts: [],
     topCategories: [],
     activePromotions: []
   });
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() =>
-  {
+  useEffect(() => {
     axios.get("http://localhost:8080/api/home")
-      .then(response =>
-      {
+      .then(response => {
         setHomeData(response.data);
         setIsLoading(false);
       })
-      .catch(error =>
-      {
+      .catch(error => {
         console.error("Error fetching home page data:", error);
         setIsLoading(false);
       });
   }, []);
 
-  if (isLoading)
-  {
+  if (isLoading) {
     return (
       <div className="flex justify-center items-center h-screen">
         <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
