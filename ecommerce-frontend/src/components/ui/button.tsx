@@ -5,8 +5,9 @@ import { cn } from "/Applications/Java-E-Commerce-Application/ecommerce-frontend
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
     variant?: "default" | "destructive" | "outline" | "ghost";
-    size?: "default" | "sm" | "lg";
+    size?: "default" | "sm" | "lg" | "icon";
     asChild?: boolean;
+
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({ className, variant = "default", size = "default", asChild = false, ...props }, ref) => {

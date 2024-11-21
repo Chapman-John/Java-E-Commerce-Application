@@ -10,7 +10,7 @@ import
   CarouselItem,
   CarouselNext,
   CarouselPrevious
-} from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/carousel.jsx';
+} from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/carousel.tsx';
 
 const HomePage = () =>
 {
