@@ -6,16 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.chapman.ecommerce_backend.dto.PromotionDTO;
-import com.chapman.ecommerce_backend.respository.PromotionRespository;
+import com.chapman.ecommerce_backend.repository.PromotionRepository;
 
 @Service
 public class PromotionService {
 
     @Autowired
-    private final PromotionRespository promotionRespository;
+    private final PromotionRepository promotionRepository;
 
-    public PromotionService(PromotionRespository promotionRespository) {
-        this.promotionRespository = promotionRespository;
+    public PromotionService(PromotionRepository promotionRepository) {
+        this.promotionRepository = promotionRepository;
     }
 
     public List<PromotionDTO> getActivePromotions() {

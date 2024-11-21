@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.chapman.ecommerce_backend.dto.CategoryDTO;
-import com.chapman.ecommerce_backend.respository.CategoryRespository;
+import com.chapman.ecommerce_backend.repository.CategoryRepository;
 
 @Service
 public class CategoryService {
 
     @Autowired
-    private final CategoryRespository categoryRepository;
+    private final CategoryRepository categoryRepository;
 
-    public CategoryService(CategoryRespository categoryRepository) {
+    public CategoryService(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
 
