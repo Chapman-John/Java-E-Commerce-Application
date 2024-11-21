@@ -22,7 +22,7 @@ Ensure you have Maven and Java installed on your system.
 
 ### Build and Run the Backend
 1. Clean and build the project, skipping tests:  
-   `mvn clean install -DskipTests`
+   `mvn clean install`
    
 2. Start the Spring Boot backend:  
    `mvn spring-boot:run`
