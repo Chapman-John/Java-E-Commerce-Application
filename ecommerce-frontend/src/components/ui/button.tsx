@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
-import { cn } from "../../lib/utils"
+import { cn } from "/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/lib/utils.ts"
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;

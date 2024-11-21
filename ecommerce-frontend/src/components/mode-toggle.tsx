@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Moon, Sun } from "lucide-react"
-import { Button } from "../ui/button"
+import { Button } from "/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/button.tsx"
 
 export function ModeToggle() {
     const [theme, setTheme] = React.useState("light")

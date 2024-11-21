@@ -17,7 +17,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { ModeToggle } from '@/components/mode-toggle';
+import { ModeToggle } from '../src/components/mode-toggle.tsx';
 import HomePage from './pages/HomePage';
 
 function App()
