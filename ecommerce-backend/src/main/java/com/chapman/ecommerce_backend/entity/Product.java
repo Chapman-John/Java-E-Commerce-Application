@@ -13,20 +13,23 @@ public class Product {
     private Long id;
     private String name;
     private String description;
-    private String imageUrl;
     private double price;
+    private String imageUrl;
     private int quantity;
+    private boolean featured;
 
     public Product() {
     }
 
-    public Product(Long id, String name, String description, String imageUrl, double price, int quantity) {
+    public Product(Long id, String name, String description, double price, String imageUrl, int quantity,
+            boolean featured) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.imageUrl = imageUrl;
         this.price = price;
+        this.imageUrl = imageUrl;
         this.quantity = quantity;
+        this.featured = false;
     }
 
     public Long getId() {
@@ -51,5 +54,13 @@ public class Product {
 
     public int getQuantity() {
         return quantity;
+    }
+
+    public boolean isFeatured() {
+        return featured;
+    }
+
+    public void setFeatured(boolean featured) {
+        this.featured = featured;
     }
 }
