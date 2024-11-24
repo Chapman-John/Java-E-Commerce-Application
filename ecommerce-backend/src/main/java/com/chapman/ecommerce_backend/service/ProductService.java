@@ -3,6 +3,7 @@ package com.chapman.ecommerce_backend.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 // import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,9 @@ import com.chapman.ecommerce_backend.repository.ProductRepository;
 @Service
 public class ProductService {
 
+    @Autowired
     private final ProductRepository productRepository;
 
-    // @Autowired
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
