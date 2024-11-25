@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -55,6 +56,18 @@ public class HomeController {
             return ResponseEntity.ok("Product created successfully.");
         } else {
             return ResponseEntity.status(500).body("Failed to create product.");
+        }
+    }
+
+    @PutMapping("/products")
+    public ResponseEntity<String> updateFeaturedProduct(@RequestBody ProductDTO productDTO) {
+        // Call a service method to save the product
+        boolean isCreated = productService.createFeaturedProduct(productDTO);
+
+        if (isCreated) {
+            return ResponseEntity.ok("Product updated successfully.");
+        } else {
+            return ResponseEntity.status(500).body("Failed to update product.");
         }
     }
 }
