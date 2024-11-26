@@ -40,8 +40,16 @@ public class Product {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getDescription() {
         return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getImageUrl() {
@@ -50,6 +58,10 @@ public class Product {
 
     public double getPrice() {
         return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getQuantity() {

@@ -1,6 +1,7 @@
 package com.chapman.ecommerce_backend.service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +51,29 @@ public class ProductService {
                 productDTO.isFeatured());
         productRepository.save(product);
         return true;
+    }
+
+    public boolean updateFeaturedProduct(ProductDTO productDTO) {
+        // Find the existing product
+        Optional<Product> existingProduct = productRepository.findById(productDTO.getId());
+
+        if (existingProduct.isPresent()) {
+            Product product = existingProduct.get();
+
+            // Update the product fields
+            product.setName(productDTO.getName());
+            product.setDescription(productDTO.getDescription());
+            product.setPrice(productDTO.getPrice());
+            product.setFeatured(true); // Ensure it's set as featured
+            // Update other fields as necessary
+
+            // Save the updated product
+            productRepository.save(product);
+            return true;
+        } else {
+            // Product not found
+            return false;
+        }
     }
 
     private ProductDTO convertToDTO(Product product) {
