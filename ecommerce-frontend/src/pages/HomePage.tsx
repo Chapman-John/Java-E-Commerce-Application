@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card.tsx';
-import { Badge } from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/badge.tsx';
-import { Button } from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/button.tsx';
+import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
+import { Badge } from './ui/badge';
+import { Button } from './components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious
-} from '/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/components/ui/carousel.tsx';
+} from './components/ui/carousel';
 
 interface Product {
   name: string;
