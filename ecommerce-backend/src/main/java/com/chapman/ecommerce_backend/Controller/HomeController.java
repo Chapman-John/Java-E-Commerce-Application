@@ -6,6 +6,7 @@ import com.chapman.ecommerce_backend.service.CategoryService;
 import com.chapman.ecommerce_backend.service.ProductService;
 import com.chapman.ecommerce_backend.service.PromotionService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -22,8 +23,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/home")
 // @CrossOrigin(origins = "http://localhost:3000")
 @CrossOrigin(origins = "http://localhost:3000", methods = { RequestMethod.GET, RequestMethod.POST })
-
 public class HomeController {
+
+    @Autowired
     private final ProductService productService;
     private final CategoryService categoryService;
     private final PromotionService promotionService;
