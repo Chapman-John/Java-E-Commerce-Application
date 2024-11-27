@@ -37,7 +37,7 @@ Ensure you have Node.js and npm installed on your system.
    `npx create-react-app ecommerce-frontend`
    
 2. Install required dependencies:  
-   `npm install react-router-dom tailwindcss @headlessui/react axios @mui/material @emotion/react @emotion/styled`
+   `npm install @emotion/react @emotion/styled @headlessui/react @mui/material @radix-ui/react-slot @testing-library/jest-dom @testing-library/react @testing-library/user-event axios class-variance-authority clsx embla-carousel embla-carousel-react lucide-react react react-dom react-router-dom react-scripts shadcn-ui tailwind-merge tailwindcss-animate web-vitals`
    
 3. Start the React application:  
    `npm start`
