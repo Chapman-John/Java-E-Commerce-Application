@@ -45,6 +45,7 @@ const HomePage: React.FC = () => {
   useEffect(() => {
     axios.get("http://localhost:8080/api/home")
       .then(response => {
+        console.log("Data fetched:", response.data);
         setHomeData(response.data);
         setIsLoading(false);
       })
