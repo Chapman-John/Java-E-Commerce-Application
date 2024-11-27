@@ -1,5 +1,5 @@
 import * as React from "react"
-import { cn } from "/Applications/Java-E-Commerce-Application/ecommerce-frontend/src/lib/utils.ts"
+import { cn } from "../../lib/utils"
 
 interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
     variant?: "default" | "secondary" | "destructive" | "outline";

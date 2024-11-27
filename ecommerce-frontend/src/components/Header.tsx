@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ModeToggle } from './mode-toggle';
+import { ModeToggle } from './ModeToggle';
 
 const Header: React.FC = () => (
     <header className="sticky top-0 z-50 w-full border-b">

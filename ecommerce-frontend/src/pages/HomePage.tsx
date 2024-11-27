@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
-import { Badge } from './ui/badge';
-import { Button } from './components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious
-} from './components/ui/carousel';
+} from '../components/ui/carousel';
 
 interface Product {
   name: string;
