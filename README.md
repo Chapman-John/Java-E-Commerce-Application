@@ -4,7 +4,7 @@ Spring Web - Spring Data JPA - MySQL Driver - Spring Security - Lombok - Spring 
 
 This guide provides instructions to set up and run the Java E-commerce Application, including both the backend and frontend components.
 
-## Database Setup (MySQL)
+## Database Setup (MySQL) 
 
 To start MySQL, use the following command:  
 `brew services start mysql`
