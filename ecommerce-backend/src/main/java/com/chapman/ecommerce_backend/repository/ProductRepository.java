@@ -11,8 +11,6 @@ import org.springframework.data.domain.Pageable;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-    // List<Product> findByIsFeaturedTrue();
-    // Page<Product> findByFeatured(Pageable pageable);
     Page<Product> findByFeaturedTrue(Pageable pageable);
 
 }
