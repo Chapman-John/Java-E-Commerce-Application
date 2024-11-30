@@ -14,7 +14,7 @@ To check if MySQL is running:
 
 To stop MySQL:  
 `brew services stop mysql`
-
+ 
 ## Backend Setup
 
 ### Prerequisites
