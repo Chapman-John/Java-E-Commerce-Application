@@ -10,7 +10,7 @@ To start MySQL, use the following command:
 `brew services start mysql`
 
 To check if MySQL is running:  
-`brew services list`
+`brew services list` 
  
 To stop MySQL:  
 `brew services stop mysql`
