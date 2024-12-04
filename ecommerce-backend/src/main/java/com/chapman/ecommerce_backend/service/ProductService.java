@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.chapman.ecommerce_backend.dto.ProductDTO;
@@ -24,12 +23,20 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public List<ProductDTO> getFeaturedProducts(int featuredProductsLimit) {
-        Pageable pageable = PageRequest.of(0, featuredProductsLimit);
-        List<Product> featuredProducts = productRepository.findByFeaturedTrue(pageable).getContent();
+    // public List<ProductDTO> getFeaturedProducts(int featuredProductsLimit) {
+    // Pageable pageable = PageRequest.of(0, featuredProductsLimit);
+    // List<Product> featuredProducts =
+    // productRepository.findByFeaturedTrue(pageable).getContent();
 
-        return featuredProducts.stream()
-                .map(this::convertToDTO)
+    // return featuredProducts.stream()
+    // .map(this::convertToDTO)
+    // .collect(Collectors.toList());
+    // }
+
+    public List<ProductDTO> getFeaturedProducts() {
+        return productRepository.findByFeaturedTrue().stream()
+                .map(product -> new ProductDTO(product.getId(), product.getName(), product.getDescription(),
+                        product.getPrice(), product.getImageUrl(), product.getQuantity(), product.isFeatured()))
                 .collect(Collectors.toList());
     }
 

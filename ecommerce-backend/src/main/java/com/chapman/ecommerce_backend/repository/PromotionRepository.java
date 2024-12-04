@@ -10,7 +10,8 @@ import com.chapman.ecommerce_backend.entity.Promotion;
 @Repository
 public interface PromotionRepository extends JpaRepository<Promotion, Long> {
 
-    @Query("SELECT p FROM Promotion p WHERE p.start_date <= LocalDate AND p.end_date >= LocalDate")
-    List<Promotion> findActivePromotions();
+    // @Query("SELECT p FROM Promotion p WHERE p.start_date <= LocalDate AND
+    // p.end_date >= LocalDate")
+    // List<Promotion> findActivePromotions();
 
 }

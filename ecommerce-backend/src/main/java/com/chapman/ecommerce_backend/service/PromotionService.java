@@ -31,13 +31,15 @@ public class PromotionService {
     // .collect(Collectors.toList());
     // }
 
-    public List<PromotionDTO> getActivePromotions() {
-        List<Promotion> promotions = promotionRepository.findActivePromotions();
-        return promotions.stream()
-                .map(promotion -> new PromotionDTO(promotion.getId(), promotion.getName(), promotion.getDescription(),
-                        promotion.getImageUrl(), promotion.getDiscount(), promotion.getCode(), promotion.getStartDate(),
-                        promotion.getEndDate()))
-                .collect(Collectors.toList());
-    }
+    // public List<PromotionDTO> getActivePromotions() {
+    // List<Promotion> promotions = promotionRepository.findActivePromotions();
+    // return promotions.stream()
+    // .map(promotion -> new PromotionDTO(promotion.getId(), promotion.getName(),
+    // promotion.getDescription(),
+    // promotion.getImageUrl(), promotion.getDiscount(), promotion.getCode(),
+    // promotion.getStartDate(),
+    // promotion.getEndDate()))
+    // .collect(Collectors.toList());
+    // }
 
 }

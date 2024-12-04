@@ -42,9 +42,10 @@ public class HomeController {
             @RequestParam(defaultValue = "4") int topCategoriesLimit) {
 
         HomePageDTO homePageData = HomePageDTO.builder()
-                .featuredProducts(productService.getFeaturedProducts(featuredProductsLimit))
-                .topCategories(categoryService.getTopCategories(topCategoriesLimit))
-                .activePromotions(promotionService.getActivePromotions())
+                // .featuredProducts(productService.getFeaturedProducts(featuredProductsLimit))
+                .featuredProducts(productService.getFeaturedProducts())
+                // .topCategories(categoryService.getTopCategories(topCategoriesLimit))
+                // .activePromotions(promotionService.getActivePromotions())
                 .build();
 
         return ResponseEntity.ok(homePageData);

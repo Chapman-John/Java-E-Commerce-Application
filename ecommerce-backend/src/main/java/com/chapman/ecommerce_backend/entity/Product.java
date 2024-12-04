@@ -29,7 +29,7 @@ public class Product {
         this.price = price;
         this.imageUrl = imageUrl;
         this.quantity = quantity;
-        this.featured = false;
+        this.featured = featured;
     }
 
     public Long getId() {
