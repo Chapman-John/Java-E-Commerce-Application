@@ -7,7 +7,7 @@ This guide provides instructions to set up and run the Java E-commerce Applicati
 ## Database Setup (MySQL) 
 
 To start MySQL, use the following command:  
-`brew services start mysql`
+`brew services start mysql` 
 
 To check if MySQL is running:  
 `brew services list` 
