@@ -49,4 +49,4 @@ Ensure you have Node.js and npm installed on your system.
 3. Set up and run the frontend using React.
 
 With this guide, you'll have a fully functional e-commerce application, powered by a Spring Boot backend and a React frontend.
-
+ 
