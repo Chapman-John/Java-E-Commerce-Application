@@ -1,5 +1,6 @@
 # Java E-commerce Application
 
+
 Spring Web - Spring Data JPA with Hibernate - MySQL Driver - Spring Security - Lombok - Spring Boot Devtools 
 
 This guide provides instructions to set up and run the Java E-commerce Application, including both the backend and frontend components.
