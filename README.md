@@ -5,7 +5,7 @@ Spring Web - Spring Data JPA with Hibernate - MySQL Driver - Spring Security - L
 This guide provides instructions to set up and run the Java E-commerce Application, including both the backend and frontend components.
 
 ## License
- 
+  
 This project is dual-licensed under: 
 
 - **MIT License**: For more details, see the [MIT License](https://opensource.org/licenses/MIT).
