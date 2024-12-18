@@ -16,7 +16,7 @@ This project is dual-licensed under:
 To start MySQL, use the following command:  
 `brew services start mysql` 
 
-To check if MySQL is running:   
+To check if MySQL is running:    
 `brew services list` 
  
 To stop MySQL:  
